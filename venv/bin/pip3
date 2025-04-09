@@ -1,0 +1,10 @@
+#!/bin/sh
+'''exec' "/media/om/62e7034c-f635-43c8-90cb-8ea0f17080501/om/New Downlaod - 21 March 2025/Odia dance/venv/bin/python3" "$0" "$@"
+' '''
+# -*- coding: utf-8 -*-
+import re
+import sys
+from pip._internal.cli.main import main
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(main())
