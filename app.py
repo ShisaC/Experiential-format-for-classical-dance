@@ -155,3 +155,5 @@ def get_status():
 if __name__ == '__main__':
     logger.info("Starting Flask server...")
     app.run(host='0.0.0.0', port=5001, debug=True) 
+#docker build -t dance-comparison-app .
+#docker run -p 5001:5001 -v $(pwd)/dance_videos:/app/dance_videos --device=/dev/video0:/dev/video0 dance-comparison-app
